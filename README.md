@@ -96,3 +96,13 @@ RegionInfo cityInfo = location.getCity();
 RegionInfo districtInfo = location.getDistrict();
 ```
 
+
+```
+打包命令
+mvn clean install -Dmaven.test.skip=true -Ptool
+```
+
+```
+执行命令
+jsonfile2mysql.bat -h 10.60.x.x -d geo_coder -u root -x -f C:\china-region.json -i
+```
